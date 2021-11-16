@@ -25,6 +25,7 @@ function draw() {
      
       
     beginShape();
+    
 
     curveVertex(200, 400);
     curveVertex(100, 600);
