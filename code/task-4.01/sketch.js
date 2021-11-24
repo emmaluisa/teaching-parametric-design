@@ -18,7 +18,7 @@ function draw() {
   text('dis     con    nected', 300, 200);
   //text('con–nected', 400, 200);
   
-  text('dis     con    nectedd', 100, 400);
+  text('dis     con    nected', 100, 400);
 
 
   fill("red");
@@ -28,9 +28,9 @@ function draw() {
 
   
   
-  fill("red");
-  stroke("red")
-  strokeWeight(5)
+  fill("white");
+  stroke("red");
+  strokeWeight(5);
   circle(500, 700, 100);
 
   
@@ -48,4 +48,5 @@ save();
       
 
 }
+
 
