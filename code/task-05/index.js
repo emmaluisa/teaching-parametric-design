@@ -6,6 +6,7 @@ const {union, subtract, intersect, scission} = jscad.booleans;
 const {translate, rotate, scale, center, align} = jscad.transforms;
 
 const main = () => {
+
   const cubeShape = cube({
     size: 30
 
@@ -16,9 +17,9 @@ const main = () => {
     center: [0, 0, 0]
   })
    
-  //const cube = [];
+  
   const unionShape = union([sphereShape, cubeShape]);
-const unionShapes = [];
+const unionShape = [];
   for (let c = 0; c < 10; c += 1) {
     
     unionShapes.push(translate(
@@ -29,10 +30,6 @@ const unionShapes = [];
 
   return unionShapes;
 }
-//   return cube;
-//   return allPrimitives.map((primitive, index) => {
-//     return translate([(index % 4 - 2) * 6, Math.floor(index / 4 - 2) * 6, 0], primitive)
-//   });
-// };
+
 
 module.exports = { main };
